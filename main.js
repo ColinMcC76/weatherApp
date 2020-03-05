@@ -1,4 +1,4 @@
-var api = "http://api.openweathermap.org/data/2.5/weather?zip=";
+var api = "https://api.openweathermap.org/data/2.5/weather?zip=";
 var apiKey = ",us&appid=f6e794a744605634525ea7abdecf8830&units=imperial";
 var tempFahr = document.getElementById("fahrenheit");
 var tempKel = document.getElementById("kelvin");
