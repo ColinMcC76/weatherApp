@@ -44,7 +44,7 @@ function weather(zip) {
             tempKel.innerText = "";
             townName.innerText = '';
             cond.innerText = ""
-            seasonDisplay.src = (url);
+            seasonDisplay.src = "";
 
         })
         // var data = weather.JSON();
