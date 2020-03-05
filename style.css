@@ -1,0 +1,16 @@
+#appBtn {
+    width: 100%;
+}
+
+.card {
+    min-height: 150px
+}
+
+.colSize {
+    min-height: 100px
+}
+
+#cityName,
+#condition {
+    padding-top: 35px;
+}
