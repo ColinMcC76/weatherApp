@@ -29,7 +29,7 @@
             <div class="container-fluid pt-5 pb-2">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-6">
-                        <button href="#" id="appBtn" class="btn btn-success m-1" onclick="setup()" data-target="input">Get Weather</button>
+                        <button href="#" id="appBtn" class="btn btn-success m-1 text-light" onclick="setup()" data-target="input">Get Weather</button>
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <!-- <label for="x">Zipcode</label> -->
@@ -102,16 +102,16 @@
                             <div class="card-body p-0">
                                 <h5 class="card-header bg-secondary text-light">Condition</h5>
                                 <h6 class="card-subtitle mb-2 text-muted d-none">Card subtitle</h6>
-                                <p class="card-text" id="condition"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 p-2">
-                        <div class="card bg-light">
-                            <div class="card-body p-0">
-                                <h5 class="card-header bg-secondary text-light">Seasonal Display</h5>
-                                <h6 class="card-subtitle mb-2 text-muted d-none">Card subtitle</h6>
-                                <img class="card-img-bottom w-auto" id="seasonDisplay" src=""></img>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text" id="condition"></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <img class="card-img w-auto rounded-circle" id="seasonDisplay" src=""></img>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

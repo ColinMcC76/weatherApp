@@ -38,7 +38,7 @@ function weather(zip) {
         })
         .catch((error) => {
             console.log("Error:", error);
-            err.innerText = "Error:" + error + ". In other words, that didn't work. Maybe make sure thats a valid zipcode!";
+            err.innerText = "Error: " + zip.value + " didn't work. Maybe make sure thats a valid zipcode!";
             tempFahr.innerText = "";
             tempCelc.innerText = "";
             tempKel.innerText = "";
