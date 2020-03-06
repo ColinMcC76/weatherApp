@@ -18,6 +18,7 @@ function setup() {
 function weather(zip) {
     fetch(api + zip.value + apiKey)
         .then((response) => {
+            if (!response.ok) { throw response }
             return response.json();
         })
         .then((data) => {
@@ -37,17 +38,22 @@ function weather(zip) {
             err.innerText = "";
         })
         .catch((error) => {
-            console.log("Error:", error);
-            err.innerText = "Error: " + zip.value + " didn't work. Maybe make sure thats a valid zipcode!";
+            // console.log("Error:", error);
+            error.json().then(errorMessage => {
+                    console.log(errorMessage)
+                    err.innerText = "Error: " + errorMessage.message
+                })
+                // err.innerText = "Error: " + zip.value + " didn't work. Maybe make sure thats a valid zipcode!";
             tempFahr.innerText = "";
             tempCelc.innerText = "";
             tempKel.innerText = "";
             townName.innerText = '';
             cond.innerText = ""
             seasonDisplay.src = "";
-
         })
-        // var data = weather.JSON();
 }
+
+// var data = weather.JSON();
+
 // console.log(tempFahr)
 // console.log(data.weather.main)
